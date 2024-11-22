@@ -74,6 +74,8 @@ public class Animal implements Comparable<Animal> {
         return o.nom.compareTo(this.nom);
     }
 
+
+
     public static void parcoursIterator(Set<Animal> animaux){
             Iterator<Animal> itAnimaux = animaux.iterator();
             while(itAnimaux.hasNext()){

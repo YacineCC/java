@@ -23,6 +23,7 @@ public class App {
         System.out.println(tiger == lion1);
         System.out.println(lion1.equals(lion2));
         Animal.parcoursIterator(animaux);
+        Animal.parcoursForEach(animaux);
 
     }
 }
