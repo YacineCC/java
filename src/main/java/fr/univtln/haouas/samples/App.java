@@ -1,6 +1,7 @@
 package fr.univtln.haouas.samples;
 
 import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.Set;
 
 /**
@@ -13,7 +14,10 @@ public class App {
         Animal tiger = factory.createAnimal("Sagat", 33, "Tigre", 95);
         System.out.println(tiger);
 
-        Set<Animal> animaux = new HashSet<>();
+        //Set<Animal> animaux = new HashSet<>();
+        Set<Animal> animaux = new TreeSet<>();
+
+
         Animal lion1 = new Animal("Leo", 5, "Lion", 100);
         Animal lion2 = new Animal("Leo", 3, "Lion", 100);
         animaux.add(lion1);
@@ -22,8 +26,15 @@ public class App {
         System.out.println(animaux);
         System.out.println(tiger == lion1);
         System.out.println(lion1.equals(lion2));
-        Animal.parcoursIterator(animaux);
-        Animal.parcoursForEach(animaux);
+        //Animal.parcoursIterator(animaux);
+        //Animal.parcoursForEach(animaux);
+
+        Animal[] desAnimaux = new Animal[animaux.size()];
+        animaux.toArray(desAnimaux);
+        desAnimaux.append(lion2);
+        
+
 
     }
+
 }

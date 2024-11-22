@@ -1,7 +1,6 @@
 package fr.univtln.haouas.samples;
 
 import java.time.LocalDate;
-import java.util.Comparator;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -11,6 +10,7 @@ public class Animal implements Comparable<Animal> {
     private String espece;
     private double poids ;
     private LocalDate dernierExamen = LocalDate.now();
+    private Tatouage tatouage;
 
     public String getNom() {
         return nom;
